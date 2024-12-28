@@ -11,7 +11,7 @@ body {
 #loadingPageBackground {
     /* background-color: aqua; */
     width: 100%;
-    height: 700px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,57 +105,175 @@ body {
 } */
 
 
-#tossDiv {
-    /* background-color: blue; */
+#choiceDiv {
+    height: 100px;
     width: 100%;
-    height: 600px;
+    background-color: green;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.choiceButtons {
+    height: 100px;
+    width: 200px;
+    margin: 10px;
+    background-color: rgba(220, 216, 94, 0.821);
+    border-radius: 10px;
+}
+
+.buttonImages {
+    height: 80px;
+    width: 80px;
+}
+
+#gameWindow {
+    display: none;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+#scoreBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 100px;
+    width: 630px;
+}
+
+#scoreArea {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+
+#loadArea {
+    height: 100px;
+    width: 630px;
+    background-color: pink;
+    display: flex;
+}
+
+.loadAreaBox {
+    height: 100px;
+    width: 210px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#round {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 30px;
+}
+
+#loadingRingLeft {
+    height: 70px;
+    width: 70px;
+    border: 8px dotted black;
+    border-radius: 50%;
+
+    animation-name: rotateClock;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+
+    visibility: hidden;
+}
+
+#rockLeftImage {
+    height: 90px;
+    width: 90px;
+    rotate: 90deg;
+    position: absolute;
+    visibility: hidden;
+}
+#paperLeftImage {
+    height: 90px;
+    width: 90px;
+    rotate: 90deg;
+    position: absolute;
+    visibility: hidden;
+}
+
+#scissorLeftImage {
+    height: 90px;
+    width: 90px;
+    rotate: 90deg;
+    position: absolute;
+    visibility: hidden;
+}
+
+#loadingRingRight {
+    height: 70px;
+    width: 70px;
+    border: 8px dotted black;
+    border-radius: 50%;
+
+    animation-name: rotateAntiClock;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+
+    visibility: hidden;
+}
+
+#rockRightImage {
+    height: 90px;
+    width: 90px;
+    rotate: -90deg;
+    position: absolute;
+    visibility: hidden;
+}
+#paperRightImage {
+    height: 90px;
+    width: 90px;
+    rotate: -90deg;
+    position: absolute;
+    visibility: hidden;
+}
+
+#scissorRightImage {
+    height: 90px;
+    width: 90px;
+    rotate: -90deg;
+    position: absolute;
+    visibility: hidden;
+}
+
+
+
+
+@media only screen and (max-width:700px) {
+    #loadArea {
+        height: 100px;
+        width: 100%;
+        background-color: pink;
+    }
 
     
+
+    #choiceDiv {
+        height: 100px;
+        width: 100%;
+    }
+    .choiceButtons {
+        height: 80px;
+        width: 160px;
+    }
+    
+    .buttonImages {
+        height: 80px;
+        width: 80px;
+    }
+
+    #scoreBar {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        height: 100px;
+        width: 90%;
+    }
 }
 
-#tossImgDiv {
-    height: 160px;
-    width: 160px;
-    border: 10px dotted black;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    bottom: 100px;
-    /* animation-name: rotateClock;
-    animation-duration: 1s; */
-}
-
-#tossImg {
-    height: 140px;
-    width: 140px;
-    position: relative;
-    left: 7px;
-    bottom: 3px;
-}
-
-#tossButtonDiv {
-    height: 100px;
-    width: 200px;
-    /* background-color: green; */
-    position:relative;
-    bottom: 50px;
-}
-
-#tossButton {
-    height: 100px;
-    width: 200px;
-    border-radius: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
-    background-color: rgba(255, 255, 114, 0.821);
-}
-
-#tossButton:hover {
-    background-color: rgba(220, 216, 94, 0.821);
-}

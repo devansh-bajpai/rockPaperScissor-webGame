@@ -15,20 +15,49 @@
     </div>
 
 
-    <div id="tossDiv">
-        <div id="tossImgDiv">
-            <img src="coinToss.png" alt="" id="tossImg">
+
+    <div id="gameWindow">
+
+        <div id="scoreBar">
+            <p id="scoreArea">Score: 0-0</p>
+            <p id="round">Round: 1</p>
+        </div>
+        <div id="loadArea">
+            <div class="loadAreaBox">
+                <div id="loadingRingLeft"></div>
+                <img src="rock.png" alt="" id="rockLeftImage">
+                <img src="paper.png" alt="" id="paperLeftImage">
+                <img src="scissor.png" alt="" id="scissorLeftImage">
+            </div>
+
+
+            <div class="loadAreaBox"></div>
+
+
+            <div class="loadAreaBox">
+                <div id="loadingRingRight"></div>
+
+                <img src="rock.png" alt="" id="rockRightImage">
+                <img src="paper.png" alt="" id="paperRightImage">
+                <img src="scissor.png" alt="" id="scissorRightImage">
+            </div>
+        </div>
+        <div id="choiceDiv">
+            <button class="choiceButtons" id="button1">
+                <img src="rock.png" alt="" class="buttonImages">
+            </button>
+            <button class="choiceButtons" id="button2">
+                <img src="paper.png" alt="" class="buttonImages">
+            </button>
+            <button class="choiceButtons" id="button3">
+                <img src="scissor.png" alt="" class="buttonImages">
+            </button>
         </div>
 
-        <div id="tossButtonDiv">
-            <a >
-                <button id="tossButton" onclick="tossButtonClicked()">
-                    Toss
-                </button>
-            </a>
-        </div>
-    
+
     </div>
+
+
 
 
     <script src="gamePageScript.js"></script>
