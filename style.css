@@ -1,0 +1,215 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: rgb(167, 252, 255);
+}
+
+
+#landingPageMainDiv {
+    background-color: blue;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* 
+#mainHeadingLandingPage {
+    font-family: "Josefin Sans", serif;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+
+#forKidsHeading {
+    font-family: "Exo 2";
+    font-size:20px;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    left: 189px;
+} */
+
+#mainHeadingDiv {
+    /* background-color: green; */
+    width: 500px;
+    display: flex;
+    justify-content: right;
+    
+}
+
+#mainHeadingLandingPage {
+    font-family: "Josefin Sans", serif;
+    font-size: 50px;
+}
+
+
+#subHeadingDiv {
+    /* background-color: pink; */
+    width: 500px;
+    display: flex;
+    justify-content: right;
+
+}
+
+#subHeadingLandingPage {
+    font-family: "Exo 2";
+    font-size: 20px;
+}
+
+.landingPageTextDivs {
+    position: relative;
+    bottom: 100px;
+}
+
+#logoDiv {
+    height: 100px;
+    width: 500px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logoImageLandingPage {
+    height: 80px;
+    width: 80px;
+}
+
+.buttonsDiv {
+    width: 500px;
+    height: 100px;
+    /* border: 1px solid black; */
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    bottom: 70px;
+}
+
+#playButton {
+    width: 400px;
+}
+
+.landingPageButtons {
+    height: 100px;
+    width: 200px;
+    background-color: pink;
+    border-radius: 8px;
+    font-family: "Exo 2";
+    font-size: 25px;
+}
+
+@media only screen and (min-width: 1800px) {
+    #mainHeadingDiv {
+        width: 1000px;
+        /* background-color: green; */
+    }
+    #mainHeadingLandingPage {
+        font-size: 80px;
+    }
+    #subHeadingDiv {
+        /* background-color: pink; */
+        width: 1000px;
+    }
+
+    #subHeadingLandingPage {
+        font-size: 40px;
+    }
+
+    #logoDiv {
+        width: 1000px;
+        height: 130px;
+    }
+    #logoImageLandingPage {
+        height: 125px;
+        width: 125px;
+        position: relative;
+        left: 115px;
+    }
+
+
+
+
+
+
+
+    .buttonsDiv {
+        width: 500px;
+        height: 100px;
+        /* border: 1px solid black; */
+        /* background-color: green; */
+        display: flex;
+        justify-content: center;
+    
+        position: relative;
+        bottom: 70px;
+        left: 150px;
+    }
+    
+    #playButton {
+        width: 700px;
+    }
+    
+    .landingPageButtons {
+        height: 100px;
+        width: 350px;
+        background-color: pink;
+        border-radius: 8px;
+        font-family: "Exo 2";
+        font-size: 25px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    #landingPageMainDiv {
+        /* background-color: green; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #mainHeadingDiv {
+        width: 300px;
+        /* background-color: yellow; */
+    }
+    #mainHeadingLandingPage {
+        font-size: 50px;
+    }
+    #subHeadingDiv {
+        /* background-color: pink; */
+        width: 300px;
+        justify-content: left;
+    }
+
+    #subHeadingLandingPage {
+        font-size: 20px;
+    }
+    
+    #logoDiv {
+        width: 300px;
+    }
+}
