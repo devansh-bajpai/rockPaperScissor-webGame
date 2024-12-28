@@ -9,7 +9,7 @@ body {
 
 
 #loadingPageBackground {
-    background-color: aqua;
+    /* background-color: aqua; */
     width: 100%;
     height: 700px;
     display: flex;
@@ -96,10 +96,66 @@ body {
 
 
 
-#loadingRing1 {
+/* #loadingRing1 {
     display: none;
 }
 
 #loadingPageBackground {
     display: none;
+} */
+
+
+#tossDiv {
+    /* background-color: blue; */
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+#tossImgDiv {
+    height: 160px;
+    width: 160px;
+    border: 10px dotted black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 100px;
+    /* animation-name: rotateClock;
+    animation-duration: 1s; */
+}
+
+#tossImg {
+    height: 140px;
+    width: 140px;
+    position: relative;
+    left: 7px;
+    bottom: 3px;
+}
+
+#tossButtonDiv {
+    height: 100px;
+    width: 200px;
+    /* background-color: green; */
+    position:relative;
+    bottom: 50px;
+}
+
+#tossButton {
+    height: 100px;
+    width: 200px;
+    border-radius: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    background-color: rgba(255, 255, 114, 0.821);
+}
+
+#tossButton:hover {
+    background-color: rgba(220, 216, 94, 0.821);
 }
