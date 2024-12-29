@@ -28,10 +28,13 @@
                 <img src="rock.png" alt="" id="rockLeftImage">
                 <img src="paper.png" alt="" id="paperLeftImage">
                 <img src="scissor.png" alt="" id="scissorLeftImage">
+                <img src="crown.png" alt="" id="crownLeftImage">
             </div>
 
 
-            <div class="loadAreaBox"></div>
+            <div class="loadAreaBox">
+                <p id="resultText"></p>
+            </div>
 
 
             <div class="loadAreaBox">
@@ -40,20 +43,26 @@
                 <img src="rock.png" alt="" id="rockRightImage">
                 <img src="paper.png" alt="" id="paperRightImage">
                 <img src="scissor.png" alt="" id="scissorRightImage">
+                <img src="crown.png" alt="" id="crownRightImage">
             </div>
         </div>
         <div id="choiceDiv">
-            <button class="choiceButtons" id="button1">
+            <button class="choiceButtons" id="button1" onclick="buttonClicked(1)">
                 <img src="rock.png" alt="" class="buttonImages">
             </button>
-            <button class="choiceButtons" id="button2">
+            <button class="choiceButtons" id="button2" onclick="buttonClicked(2)">
                 <img src="paper.png" alt="" class="buttonImages">
             </button>
-            <button class="choiceButtons" id="button3">
+            <button class="choiceButtons" id="button3" onclick="buttonClicked(3)">
                 <img src="scissor.png" alt="" class="buttonImages">
             </button>
         </div>
 
+        <div id="nextRoundTimerDiv">
+            <p id="nextRoundTimer"></p>
+            <button id="replayButton" onclick="window.location.reload()">Replay?</button>
+            <button id="homeButton" onclick="window.location.href = 'index.html'">Home</button>
+        </div>
 
     </div>
 

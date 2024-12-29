@@ -108,7 +108,7 @@ body {
 #choiceDiv {
     height: 100px;
     width: 100%;
-    background-color: green;
+    background-color: #FEE715;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,8 +118,12 @@ body {
     height: 100px;
     width: 200px;
     margin: 10px;
-    background-color: rgba(220, 216, 94, 0.821);
+    background-color: rgba(255, 255, 114, 0.821);
     border-radius: 10px;
+}
+
+.choiceButtons:hover {
+    background-color: rgba(220, 216, 94, 0.821);
 }
 
 .buttonImages {
@@ -150,17 +154,27 @@ body {
 #loadArea {
     height: 100px;
     width: 630px;
-    background-color: pink;
+    background-color: #FEE715;
     display: flex;
 }
 
 .loadAreaBox {
     height: 100px;
     width: 210px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+#resultText {
+    /* background-color: violet; */
+    height: 25px;
+    width: 160px;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #round {
@@ -179,7 +193,7 @@ body {
     animation-iteration-count: infinite;
 
 
-    visibility: hidden;
+    visibility:hidden;
 }
 
 #rockLeftImage {
@@ -249,7 +263,7 @@ body {
     #loadArea {
         height: 100px;
         width: 100%;
-        background-color: pink;
+        /* background-color: pink; */
     }
 
     
@@ -275,5 +289,60 @@ body {
         height: 100px;
         width: 90%;
     }
+}
+
+
+#nextRoundTimer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+#crownLeftImage {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    visibility: hidden;
+}
+
+#crownRightImage {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    visibility: hidden;
+}
+
+
+#replayButton {
+    margin-top: 10px;
+    visibility: hidden;
+    height: 50px;
+    width: 100px;
+    background-color: rgba(255, 255, 114, 0.821);
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    
+}
+
+#replayButton:hover {
+    background-color: rgba(220, 216, 94, 0.821);
+}
+
+#homeButton {
+    margin-top: 10px;
+    visibility: hidden;
+    height: 50px;
+    width: 100px;
+    background-color: rgba(255, 255, 114, 0.821);
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    
+}
+
+#homeButton:hover {
+    background-color: rgba(220, 216, 94, 0.821);
 }
 
